@@ -1,0 +1,205 @@
+/**
+ * Form Module
+ * Namespace : .form
+ */
+
+
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+
+
+$input-border-radius: .4rem;
+$input-border: .1rem solid lighten($color-dark-text, 27);
+$input-shadow: 0 .1rem .2rem #0f0f0f1a;
+$input-background-color: #fff;
+$input-hover: 5%;
+$input-placeholder-color: darken(desaturate($color-primary, 25), 25);
+$input-error: #ff3860;
+$input-required: #ff3860;
+
+
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+
+/* placeholders
+-------------------------------------------------------------- */
+
+input::placeholder {
+  color: $input-placeholder-color;
+  font-weight: normal;
+}
+
+
+/* block form
+-------------------------------------------------------------- */
+
+label,
+.label {
+  display: block;
+  margin-top: 1.3em;
+  margin-bottom: .8em;
+  cursor: pointer;
+}
+
+/* inline form
+-------------------------------------------------------------- */
+
+.f-inline label,
+.f-inline .label {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.f-inline {
+  display: inline-block;
+}
+
+.f-inline input,
+.f-inline .btn {
+  height: 4rem;
+}
+
+.f-inline .btn {
+  vertical-align: middle;
+}
+
+
+/* basics style
+-------------------------------------------------------------- */
+
+
+input,
+select,
+label,
+.label {
+  vertical-align: middle;
+}
+
+select {
+  margin: 0;
+  background: $input-background-color;
+  border: $input-border;
+  border-radius: $input-border-radius;
+  box-shadow: $input-shadow;
+}
+
+textarea {
+  min-width: 32rem;
+  min-height: 8em;
+  padding: .4em;
+  font-weight: 500;
+  vertical-align: top;
+  background: $input-background-color;
+  border: $input-border;
+  border-radius: $input-border-radius;
+  box-shadow: $input-shadow;
+  resize: vertical;
+}
+
+input {
+  width: 100%;
+  max-width: 32rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.14em;
+  background: $input-background-color;
+  border: $input-border;
+  border-radius: $input-border-radius;
+  box-shadow: $input-shadow;
+}
+
+textarea:active,
+textarea:focus,
+select:active,
+select:focus,
+input:active,
+input:focus {
+  outline: none;
+  box-shadow: $focus-ring;
+}
+
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: baseline;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  width: inherit;
+  padding: 0;
+}
+
+// /* autogrid
+// -------------------------------------------------------------- */
+
+// [class^='f-grid'] {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   align-items: flex-end;
+// }
+
+// [class^='f-grid'] > * {
+//   display: flex;
+//   flex: 1 0 0;
+//   flex-direction: column;
+//   margin-left: 2rem;
+// }
+
+// [class^='f-grid'] > *:first-child {
+//   margin-left: 0;
+// }
+
+// [class^='f-grid'] input {
+//   max-width: 100%;
+// }
+
+// /* size
+// -------------------------------------------------------------- */
+
+// .f-size-1 {
+//   max-width: 10rem;
+// }
+
+// .f-size-2 {
+//   max-width: 20rem;
+// }
+
+// .f-size-3 {
+//   max-width: 30rem;
+// }
+
+// .f-size-4 {
+//   max-width: 40rem;
+// }
+
+// .f-size-5 {
+//   max-width: 50rem;
+// }
+
+// .f-size-full {
+//   max-width: 100%;
+// }
+
+// /* errors
+// -------------------------------------------------------------- */
+
+// .f-required {
+//   color: $input-error;
+//   font-weight: bold;
+// }
+
+// .f-error input {
+//   margin-bottom: .8rem;
+//   border: .1rem solid $input-error;
+// }
+
+// .f-error-message {
+//   color: $input-error;
+// }

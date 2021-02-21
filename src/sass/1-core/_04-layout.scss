@@ -1,0 +1,29 @@
+/* ----------------------------------------------------------- */
+/* == layout */
+/* ----------------------------------------------------------- */
+
+/* BFC to the rescue */
+
+.mod {
+  overflow: hidden;
+}
+
+.clear,
+.line,
+.row {
+  clear: both;
+}
+
+/* blocks that must contain floats */
+
+.clearfix::after,
+.line::after,
+.mod::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.inbl {
+  display: inline-block;
+}

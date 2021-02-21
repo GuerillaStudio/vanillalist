@@ -1,0 +1,11 @@
+/* ----------------------------------------------------------- */
+/* == Plugin list */
+/* ----------------------------------------------------------- */
+
+.pluginList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(25rem, 100%), 1fr));
+  gap: 4rem;
+  row-gap: 6rem;
+  margin-bottom: 6rem;
+}

@@ -1,0 +1,29 @@
+/* ----------------------------------------------------------- */
+/* == helpers */
+/* ----------------------------------------------------------- */
+
+/* screen readers
+-------------------------------------------------------------- */
+
+/* Hide only visually, but have it available for screen readers (from HTML5 Boilerplate) */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}

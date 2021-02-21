@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+---
+{{ content | safe }}
+{% block js %}
+{% set jsSifter %}
+  {% include "./../../../node_modules/sifter/sifter.min.js" %}
+{% endset %}
+{% set jsSearch %}
+  {% include "search.js" %}
+{% endset %}
+<!-- feed it through our jsmin filter to minify -->
+<script>
+  {{ jsSifter | safe }}
+  {{ jsSearch | safe }}
+</script>
+
+{% endblock %}

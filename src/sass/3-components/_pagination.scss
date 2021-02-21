@@ -1,0 +1,29 @@
+/**
+ * Pagination Module
+ */
+
+.pagination {
+  margin-bottom: 6rem;
+}
+
+.pagination ul {
+  display: block;
+  margin: 2rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 .3rem 1em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination__link,
+.pagination__link:link,
+.pagination__link:visited {
+  min-width: 4.4rem;
+  padding: 1rem 1.3rem;
+  font-weight: normal;
+}

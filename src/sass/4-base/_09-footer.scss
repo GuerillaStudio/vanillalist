@@ -1,0 +1,15 @@
+/* ----------------------------------------------------------- */
+/* == footer */
+/* ----------------------------------------------------------- */
+
+.footer {
+  padding: 6rem 0;
+  color: lighten($color-dark-text, 10);
+  text-align: center;
+}
+
+.footer a[href*='//']::after {
+  font-size: .9em;
+  font-family: system-ui,-apple-system,sans-serif;
+  content: '↗';
+}

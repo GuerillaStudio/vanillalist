@@ -1,0 +1,92 @@
+/* ----------------------------------------------------------- */
+/* == rwd */
+/* ----------------------------------------------------------- */
+
+/* responsive iframe http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/ */
+
+.responsive-iframe {
+  position: relative;
+  height: 0;
+  padding-top: 3rem;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.responsive-iframe iframe,
+.responsive-iframe object,
+.responsive-iframe embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* utilities
+-------------------------------------------------------------- */
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: ($large + 1)) {
+
+  [class*='-l+'][class*='hidden-']:not([class*='up']) {
+    display: none !important;
+  }
+}
+
+@media (min-width: ($medium + 1)) and (max-width: $large) {
+
+  [class*='-l'][class*='hidden-']:not([class*='up']) {
+    display: none !important;
+  }
+}
+
+@media (min-width: ($small + 1)) and (max-width: $medium) {
+
+  [class*='-m'][class*='hidden-']:not([class*='up']) {
+    display: none !important;
+  }
+}
+
+@media (min-width: ($xsmall + 1)) and (max-width: $small) {
+
+  [class*='-s'][class*='hidden-']:not([class*='up']) {
+    display: none !important;
+  }
+}
+
+@media (max-width: $xsmall) {
+
+  [class*='-xs'][class*='hidden-']:not([class*='up']) {
+    display: none !important;
+  }
+}
+
+@media (min-width: $small) {
+
+  .hidden-s-up {
+    display: none !important;
+  }
+}
+
+@media (min-width: $xsmall) {
+
+  .hidden-xs-up {
+    display: none !important;
+  }
+}
+
+/* xsmall
+-------------------------------------------------------------- */
+
+@media (max-width: $xsmall) {
+
+  .mod {
+    display: block !important;
+    float: none !important;
+    width: auto !important;
+  }
+}

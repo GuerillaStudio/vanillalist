@@ -1,0 +1,76 @@
+/* ----------------------------------------------------------- */
+/* == main */
+/* ----------------------------------------------------------- */
+
+body {
+  color: $color-dark-text;
+  font-family: $fontstack1;
+  background-color: lighten(desaturate($color-primary, 5), 38.05);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 102.4rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* titles
+-------------------------------------------------------------- */
+
+h1 {
+  @include flow(50);
+}
+
+h2 {
+  @include flow(22);
+}
+
+h3 {
+  @include flow(18);
+}
+
+h4 {
+  @include flow(16);
+}
+
+/* links
+-------------------------------------------------------------- */
+
+a,
+a:visited {
+  color: $color-link;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  border-radius: .3rem;
+  outline: none;
+  box-shadow: $focus-ring;
+}
+
+/* lists
+-------------------------------------------------------------- */
+
+ul {
+  padding-left: 2rem;
+  list-style-type: disc;
+}
+
+/* divers
+-------------------------------------------------------------- */
+
+hr {
+  display: block;
+  height: .1rem;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: .1rem solid #ccc;
+}

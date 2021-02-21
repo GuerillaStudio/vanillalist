@@ -1,0 +1,51 @@
+/**
+ * Tooltip Module
+ * namespace : .tooltip
+ */
+
+
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+
+
+$tooltip-bg: rgba(0, 0, 0, .80);
+$tooltip-color: #fff;
+$tooltip-radius: .5em;
+
+
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip::after {
+  font-family: 'helvetica', 'arial', sans-serif;
+}
+
+.tooltip:hover::after {
+  position: absolute;
+  bottom: 1.35em;
+  left: 1em;
+  padding: .5em 1em;
+  color: $tooltip-color;
+  white-space: nowrap;
+  background: $tooltip-bg;
+  border-radius: $tooltip-radius;
+  content: attr(data-tooltip);
+}
+
+.tooltip:hover::before {
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+  display: block;
+  border: solid;
+  border-color: $tooltip-bg transparent;
+  border-width: .4em .4em 0 .4em;
+  content: '';
+}

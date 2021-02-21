@@ -1,0 +1,36 @@
+/**
+ * Notification module
+ * Namespace : .notif
+ */
+
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+
+$notif-success: #00d1b2;
+$notif-warning: #ffdd57;
+$notif-error: #ff3860;
+
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+
+.notif {
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.notif--success {
+  color: #fff;
+  background-color: $notif-success;
+}
+
+.notif--warning {
+  color: #444;
+  background-color: $notif-warning;
+}
+
+.notif--error {
+  color: #fff;
+  background-color: $notif-error;
+}

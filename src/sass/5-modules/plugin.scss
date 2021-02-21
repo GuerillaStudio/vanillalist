@@ -1,0 +1,97 @@
+/* ----------------------------------------------------------- */
+/* == Plugin card module */
+/* ----------------------------------------------------------- */
+
+.plugin__visual {
+  display: block;
+}
+
+.plugin__visual img {
+  width: 100%;
+  background: #e8e7e6;
+  border-radius: .5rem;
+  box-shadow: 0 .1rem .3rem 0 lighten($color-primary, 32);
+}
+
+.plugin__name {
+  margin: 2rem 0 1rem;
+  color: #36303e;
+  font-weight: normal;
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+
+.plugin__about {
+  margin-bottom: 1.5rem;
+  color: #595959;
+  font-size: 1.4rem;
+}
+
+.plugin__link,
+.plugin__link:link,
+.plugin__link:visited {
+  display: inline-block;
+  margin-right: .6rem;
+  margin-bottom: .6rem;
+  padding: .6rem 1.5rem;
+  color: darken($color-primary, 20);
+  font-size: 1.4rem;
+  line-height: 1.16em;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: lighten($color-primary, 32);
+  border: .1rem solid lighten($color-primary, 17);
+  border-radius: .3rem;
+  box-shadow: 0 .1rem .2rem #0f0f0f1a;
+  transition: .1s all;
+}
+
+.plugin__link::after {
+  padding-left: .3em;
+  font-size: .9em;
+  font-family: system-ui,-apple-system,sans-serif;
+  font-style: normal;
+  content: '↗';
+}
+
+.plugin__link:hover,
+.plugin__link:active,
+.plugin__link:focus {
+  background: lighten($color-primary, 45);
+  transform: scale3d(1.05, 1.05, 1);
+  transform-origin: center center;
+}
+
+.plugin__link:active,
+.plugin__link:focus {
+  box-shadow: $focus-ring;
+}
+
+.plugin__link--github,
+.plugin__link--github:link,
+.plugin__link--github:visited {
+  color: darken($color-github, 20);
+  background-color: lighten($color-github, 42);
+  border-color: lighten($color-github, 20);
+}
+
+.plugin__link--github:hover,
+.plugin__link--github:active,
+.plugin__link--github:focus {
+  background: lighten($color-github, 37);
+}
+
+.plugin__link--npm,
+.plugin__link--npm:link,
+.plugin__link--npm:visited {
+  color: darken($color-npm, 20);
+  background-color: lighten($color-npm, 34);
+  border-color: lighten($color-npm, 17);
+}
+
+.plugin__link--npm:hover,
+.plugin__link--npm:active,
+.plugin__link--npm:focus {
+  background: lighten($color-npm, 30);
+}

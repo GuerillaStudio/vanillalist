@@ -1,0 +1,56 @@
+/**
+ * Table Module
+ * namespace : .table
+ */
+
+
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed /* http://css-tricks.com/fixing-tables-long-strings */;
+  border: .1rem solid #cbcbcb;
+  border-collapse: collapse /* remove spacing between table cells */;
+  border-spacing: 0;
+}
+
+.table caption {
+  padding: 1em 0;
+  color: #000;
+  font: italic 85%/1 'arial', sans-serif;
+  text-align: center;
+}
+
+.table td,
+.table th {
+  margin: 0;
+  padding: .5em 1em;
+  overflow: hidden;
+  font-size: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  border-width: 0 0 0 .1rem;
+  border-left: .1rem solid #cbcbcb;
+}
+
+.table td:first-child,
+.table th:first-child {
+  border-left-width: 0;
+}
+
+.table thead {
+  color: #000;
+  text-align: left;
+  vertical-align: bottom;
+  background: #e0e0e0;
+}

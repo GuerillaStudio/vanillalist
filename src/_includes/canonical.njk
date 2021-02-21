@@ -1,0 +1,5 @@
+{% if pagination %}
+    {{ pagination.firstPageHref | absoluteUrl(site.baseUrl) }}
+{% else %}
+    {{ page.url | absoluteUrl(site.baseUrl) }}
+{% endif %}

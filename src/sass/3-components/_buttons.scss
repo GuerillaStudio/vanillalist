@@ -1,0 +1,122 @@
+/**
+* Button Module
+* namespace : .btn
+*/
+
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+
+
+$btn-primary: $color-primary;
+$btn-secondary: $color-secondary;
+$btn-success: #1cb841;
+$btn-danger: #c53a3a;
+$btn-hover: 5%;
+$btn-radius: .3rem;
+$btn-shadow: 0 .1rem .2rem #0f0f0f1a;
+
+
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.16em;
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: middle;
+  background-color: $btn-primary;
+  border-color: darken($color-primary, 20);
+  border-radius: $btn-radius;
+  box-shadow: $btn-shadow;
+  cursor: pointer;
+  transition: .1s all;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background: lighten($color-primary, 45);
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  box-shadow: $focus-ring;
+}
+
+/* colors
+-------------------------------------------------------------- */
+
+.btn--primary,
+.btn--primary:link,
+.btn--primary:visited {
+  color: #fff;
+  background-color: $btn-primary;
+  border-color: darken($color-primary, 20);
+}
+
+.btn--primary:hover,
+.btn--primary:active,
+.btn--primary:focus {
+  background-color: darken($btn-primary, $btn-hover);
+}
+
+.btn--secondary,
+.btn--secondary:link,
+.btn--secondary:visited {
+  color: darken($color-primary, 20);
+  background-color: lighten($color-primary, 32);
+  border: .1rem solid lighten($color-primary, 17);
+}
+
+.btn--secondary:hover,
+.btn--secondary:active,
+.btn--secondary:focus {
+  background-color: darken(lighten($btn-primary, 32), $btn-hover);
+}
+
+.btn--tertiary,
+.btn--tertiary:link,
+.btn--tertiary:visited {
+  color: lighten($color-primary, 3);
+  background-color: #fff;
+  border: .1rem solid lighten($color-primary, 22);
+}
+
+.btn--tertiary:hover,
+.btn--tertiary:active,
+.btn--tertiary:focus {
+  background-color: darken(lighten($btn-primary, 38), $btn-hover);
+}
+
+.btn--danger,
+.btn--danger:link,
+.btn--danger:visited {
+  color: #fff;
+  background-color: $btn-danger;
+}
+
+
+.btn--danger:hover,
+.btn--danger:active,
+.btn--danger:focus {
+  background-color: darken($btn-danger, $btn-hover);
+}
+
+/* size
+-------------------------------------------------------------- */
+
+.btn--big {
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  box-shadow: 0 .2rem .4rem #0f0f0f1a;
+
+}

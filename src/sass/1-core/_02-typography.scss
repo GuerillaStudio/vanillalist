@@ -1,0 +1,28 @@
+/* ----------------------------------------------------------- */
+/* == typography */
+/* ----------------------------------------------------------- */
+
+html {
+  font-size: 62.5%;
+  /* IE9-11 calculation fix */
+  font-size: calc(1em * .625);
+}
+
+body {
+  font-size: $base-font / 10 + em;
+  line-height: $line-height;
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption {
+  margin: 0 0 ($line-height + em) 0;
+}

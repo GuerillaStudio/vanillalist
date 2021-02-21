@@ -1,0 +1,16 @@
+# dependencies installed by npm
+node_modules
+
+# build artefacts
+public/*
+!public/uploads/.gitkeep
+
+# secrets and errors
+.env
+.log
+
+# macOS related files
+.DS_Store
+
+# editor config
+.vscode

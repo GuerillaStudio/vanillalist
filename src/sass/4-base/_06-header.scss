@@ -1,0 +1,47 @@
+/* ----------------------------------------------------------- */
+/* == header */
+/* ----------------------------------------------------------- */
+
+.header {
+  margin-bottom: 2rem;
+  padding: 6rem 0;
+  text-align: center;
+  border-top: 1rem solid $color-primary;
+}
+
+.header__homeLink:link,
+.header__homeLink:visited {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.header__name {
+  margin: 0;
+  padding: .5rem 1rem;
+  color: $color-primary;
+  font-weight: bold;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 1.33em;
+  letter-spacing: .015em;
+  border-radius: .3rem;
+}
+
+.header__homeLink:active .header__name,
+.header__homeLink:focus .header__name {
+  box-shadow: $focus-ring;
+}
+
+.header__slogan {
+  color: desaturate($color-primary, 40);
+  font-size: 1.7rem;
+}
+
+/* Search
+-------------------------------------------------------------- */
+
+.header__search {
+  margin-top: 6rem;
+}

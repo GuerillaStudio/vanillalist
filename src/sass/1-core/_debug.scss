@@ -1,0 +1,41 @@
+/* ----------------------------------------------------------- */
+/* == debug */
+/* ----------------------------------------------------------- */
+
+/*
+ * Generates a random color
+ *
+ */
+
+@mixin randomColor {
+  $red: round(random()*222);
+  $green: round(random()*222);
+  $blue: round(random()*222);
+}
+
+
+/*
+ * Easily debug an element
+ *
+ */
+
+@mixin debug() {
+  @include randomColor;
+  background-color: rgba($red, $green, $blue, 30%);
+  border: .3rem dotted rgb($red, $green, $blue);
+}
+
+
+/*
+ * Display grid for vertical rhythm
+ *
+ */
+
+@mixin debug-rythm($bh: $line-height) {
+  background: linear-gradient(to bottom, #ba9b9a .1em, transparent .1em ) !important;
+  background-size: 100% ($bh + em) !important;
+}
+
+.debug-rythm {
+  @include debug-rythm();
+}

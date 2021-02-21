@@ -1,0 +1,14 @@
+// --------------------------------------------------------------
+// == mixins */
+// --------------------------------------------------------------
+
+@mixin flow($font-size, $bf: $base-font, $lh: $line-height) {
+  $lh-value: $base-font * $lh;
+  $coeff: ceil($font-size / $lh-value);
+  $new-lh: ($lh-value / $font-size) * $coeff;
+  $margin-bottom: $new-lh / $coeff;
+
+  margin-bottom: $margin-bottom + em;
+  font-size: $font-size / 10 + rem;
+  line-height: $new-lh;
+}

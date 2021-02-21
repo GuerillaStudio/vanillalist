@@ -1,0 +1,45 @@
+/* ----------------------------------------------------------- */
+/* == grids */
+/* ----------------------------------------------------------- */
+
+$grid-gutter: 2rem;
+$grid-mb: 2rem;
+
+/**
+ * Some grid examples
+ */
+
+.grid-1 {
+  @include grid(1, $grid-gutter, $grid-mb);
+}
+
+.grid-2 {
+  @include grid(2, $grid-gutter);
+}
+
+.grid-3 {
+  @include grid(3, $grid-gutter);
+}
+
+.grid-4 {
+  @include grid(4, $grid-gutter);
+}
+
+.grid-2-noGutter {
+  @include grid(2, 0, 0);
+}
+
+.grid-1-3 {
+  @include unequalGrid(1, 3, $grid-gutter, 2rem);
+}
+
+@media (max-width: $xsmall) {
+
+  .grid-1-xs {
+    @include grid(1);
+  }
+
+  .grid-2-xs {
+    @include grid(2);
+  }
+}

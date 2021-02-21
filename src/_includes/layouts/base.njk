@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% titleGenerator title,
+            site,
+            page.url,
+            pagination %}
+        </title>
+        <link rel="canonical" href="{% include 'canonical.njk' | url %}"/>
+        {% include 'favicons.njk' %}
+        <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a class="header__homeLink" href="{{ '/' | absoluteUrl(site.baseUrl) }}">
+                    <div class="header__picto">{% include 'picto.svg' %}</div>
+                    {% if page.fileSlug === '' %}
+                        <h1 class="header__name">The Vanilla JavaScript Repository</h1>
+                    {% else %}
+                        <div class="header__name">The Vanilla JavaScript Repository</div>
+                    {% endif %}
+                </a>
+                {% if page.fileSlug !== '' %}
+                    <h1 class="visually-hidden">{{ title }}</h1>
+                {% endif %}
+                <p class="header__slogan">Because lighter plugins mean lighter sites</p>
+
+                <form class="header__search" action="/search" type="GET" data-search="form">
+                    <label class="visually-hidden" for="search_input">Search plugins</label>
+                    <input type="search" id="search_input" name="s" placeholder="slider, animation, etc…" data-search="input">
+                    <button class="btn btn--secondary">Search</button>
+                </form>
+            </div>
+        </header>
+        <main class="container">
+            {{ content | safe }}
+        </main>
+        {% include 'footer.njk' %}
+        {% block js %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,49 @@
+/* ----------------------------------------------------------- */
+/* == reset */
+/* ----------------------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img,
+table,
+td,
+blockquote,
+code,
+pre,
+textarea,
+input,
+video,
+svg {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* fix input no style on Safari */
+
+input[type='search'] {
+  appearance: textfield;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
