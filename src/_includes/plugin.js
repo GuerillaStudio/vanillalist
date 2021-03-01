@@ -13,7 +13,16 @@ module.exports = function (plugin) {
     return `
         <div class="plugin">
             <a class="plugin__visual" href="${visualLink}?ref=vanillalist" target="_blank" rel="noopener">
-                <img srcset="${plugin.image} 1x, ${plugin.image2x} 2x" alt="${plugin.title}" width="308" height="195">
+                <picture>
+                    <source
+                        media="(max-width: 559px)"
+                        srcset="${plugin.image92} 1x,
+                                ${plugin.image184} 2x">
+                    <img
+                        src="${plugin.image308}" alt="${plugin.title}"
+                        srcset="${plugin.image616} 2x"
+                        width="308" height="195">
+                </picture>
             </a>
             <h2 class="plugin__name">${plugin.title}</h2>
             <p class="plugin__about">${plugin.description}</p>
