@@ -11,3 +11,12 @@
 <meta name="twitter:title" content="{% titleGenerator title, site, page.url, pagination %}">
 <meta name="twitter:description" content="{{ description or site.description }}">
 <meta name="twitter:image" content="{{ '/cover.png' | absoluteUrl(site.baseUrl) }}">
+
+<meta property="og:title" content="{% titleGenerator title, site, page.url, pagination %}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:url" content="s{{ page.url | absoluteUrl(site.baseUrl) }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ '/cover.png' | absoluteUrl(site.baseUrl) }}">
+<meta property="og:image:width" content="1161">
+<meta property="og:image:height" content="608">
