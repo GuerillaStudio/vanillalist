@@ -1,5 +1,5 @@
 module.exports = function (pagination, page) {
-    const nextBtn = pagination.href.next ? `<a class="btn btn--primary btn--big w100" href="${pagination.href.next}" aria-label="Next page">Moar plugin</a>` : ''
+    const nextBtn = pagination.href.next ? `<a class="btn btn--primary btn--big w100" href="${pagination.href.next}" aria-label="Next page">Show moooar plugins</a>` : ''
     const list = pagination.pages.map((item, i) => {
         const current = page.url == pagination.hrefs[i]
         const currentTxt = (txtCurrent, txtFallback) => {
