@@ -6,7 +6,7 @@ class Main {
             layout: "layouts/base.njk",
             pagination: {
                 data: "collections.plugins",
-                size: "9",
+                size: "24",
                 alias: "plugins"
             },
             permalink: data => `/${data.pagination.pageNumber > 0 ? 'page/' + (data.pagination.pageNumber + 1) + '/' : ''}/index.html`
