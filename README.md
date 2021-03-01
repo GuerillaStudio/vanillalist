@@ -6,7 +6,7 @@ A vanilla JS plugin respository
 
 **`npm start`**
 
-> Run 11ty with hot reload at localhost:8080, including reload based on Sass changes
+> Run 11ty with hot reload at localhost:1312, including reload based on Sass changes
 
 **`npm run build`**
 
