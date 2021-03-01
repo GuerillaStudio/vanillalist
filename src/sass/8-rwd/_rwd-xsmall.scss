@@ -49,7 +49,7 @@
     display: grid;
     grid-template-columns: 25% 1fr;
     align-items: start;
-    column-gap: 2rem;
+    column-gap: 1rem;
   }
 
   .plugin__visual {
@@ -65,7 +65,9 @@
 
   .plugin__name {
     margin: 0;
+    margin-top: -.5rem;
     margin-bottom: .5rem;
+    font-size: 1.3em;
   }
 
   /* Pagination
