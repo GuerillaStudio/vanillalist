@@ -11,3 +11,8 @@ A vanilla JS plugin respository
 **`npm run build`**
 
 > Production build includes minified, autoprefixed CSS
+
+
+### License
+
+The project is under [Anti-Fascist MIT License](https://github.com/Laurelai/anti-fascist-mit-license)

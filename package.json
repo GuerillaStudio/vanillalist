@@ -2,6 +2,7 @@
     "name": "vanillalist",
     "version": "1.0.0",
     "description": "A vanilla JS plugin repository",
+    "license": "Anti-Fascist MIT License",
     "scripts": {
         "watch:sass": "sass  --no-source-map --watch src/sass/style.scss:public/css/style.css",
         "watch:eleventy": "eleventy --serve",
