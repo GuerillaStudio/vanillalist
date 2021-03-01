@@ -97,19 +97,19 @@ $btn-shadow: 0 .1rem .2rem #0f0f0f1a;
   background-color: darken(lighten($btn-primary, 38), $btn-hover);
 }
 
-.btn--danger,
-.btn--danger:link,
-.btn--danger:visited {
-  color: #fff;
-  background-color: $btn-danger;
-}
+// .btn--danger,
+// .btn--danger:link,
+// .btn--danger:visited {
+//   color: #fff;
+//   background-color: $btn-danger;
+// }
 
 
-.btn--danger:hover,
-.btn--danger:active,
-.btn--danger:focus {
-  background-color: darken($btn-danger, $btn-hover);
-}
+// .btn--danger:hover,
+// .btn--danger:active,
+// .btn--danger:focus {
+//   background-color: darken($btn-danger, $btn-hover);
+// }
 
 /* size
 -------------------------------------------------------------- */
