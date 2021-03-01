@@ -21,7 +21,8 @@ module.exports = function (plugin) {
                     <img
                         src="${plugin.image308}" alt="${plugin.title}"
                         srcset="${plugin.image616} 2x"
-                        width="308" height="195">
+                        width="308" height="195"
+                        loading="lazy">
                 </picture>
             </a>
             <h2 class="plugin__name">${plugin.title}</h2>
