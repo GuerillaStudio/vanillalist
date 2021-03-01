@@ -3,4 +3,82 @@
 /* ----------------------------------------------------------- */
 
 @media (max-width: $xsmall) {
+
+  /* Header
+  -------------------------------------------------------------- */
+
+  .header {
+    padding: 3rem 0;
+  }
+
+  .header__name {
+    font-size: 2.1rem;
+  }
+
+  .header_slogan {
+    font-size: 1.5rem;
+  }
+
+  .header__search {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .header__search input,
+  .header__search .btn {
+    font-size: 1.6rem;
+  }
+
+  .header__search input {
+    min-width: 0;
+  }
+
+  .header__search .btn {
+    flex-shrink: 0;
+    margin-left: .3rem;
+  }
+
+  /* Plugins
+  -------------------------------------------------------------- */
+
+  .pluginList {
+    row-gap: 4rem;
+  }
+
+  .plugin {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    align-items: start;
+    column-gap: 2rem;
+  }
+
+  .plugin__visual {
+    grid-row: 1 / span 3;
+    grid-column: 1 / 2;
+  }
+
+  .plugin__name,
+  .plugin__about,
+  .plugin__links {
+    grid-column: 2 / 3;
+  }
+
+  .plugin__name {
+    margin: 0;
+    margin-bottom: .5rem;
+  }
+
+  /* Pagination
+  -------------------------------------------------------------- */
+
+  .pagination {
+    margin-bottom: 0;
+  }
+
+  /* Footer
+  -------------------------------------------------------------- */
+
+  .footer {
+    padding-top: 3rem;
+  }
 }
