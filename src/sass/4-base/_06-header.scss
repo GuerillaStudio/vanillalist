@@ -35,7 +35,7 @@
 }
 
 .header__slogan {
-  color: desaturate($color-primary, 40);
+  color: darken(desaturate($color-primary, 40), 7);
   font-size: 1.7rem;
 }
 

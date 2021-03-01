@@ -86,7 +86,7 @@ $btn-shadow: 0 .1rem .2rem #0f0f0f1a;
 .btn--tertiary,
 .btn--tertiary:link,
 .btn--tertiary:visited {
-  color: lighten($color-primary, 3);
+  color: $color-primary;
   background-color: #fff;
   border: .1rem solid lighten($color-primary, 22);
 }
