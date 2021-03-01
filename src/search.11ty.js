@@ -5,6 +5,7 @@ class Main {
         return {
             layout: "layouts/search.njk",
             title: "Search",
+            description: "Search JavaScript Vanilla Plugins",
             permalink: "/search/index.html",
         };
     }

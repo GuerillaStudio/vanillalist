@@ -9,6 +9,7 @@
             page.url,
             pagination %}
         </title>
+        <meta name="description" content="{{ description or site.description }}">
         <link rel="canonical" href="{% include 'canonical.njk' | url %}"/>
         {% include 'favicons.njk' %}
         <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>

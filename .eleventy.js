@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
     });
 
     eleventyConfig.addShortcode("titleGenerator", (title, site, pageUrl, pagination) => {
-        let endTitle = site.name
+        let endTitle = `${site.name} • ${site.description}`
         let paginationSuffix = (pagination && pagination.pageNumber) ? ` (page ${pagination.pageNumber + 1})` : ''
         if (title) { endTitle = `${title} • ${site.name}` }
         if (pageUrl === '/') { endTitle = `${site.name} • ${site.description}` }
