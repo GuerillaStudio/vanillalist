@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
             return fs.promises.readFile(filename, { encoding: 'utf-8' })
         })
         const plugins = await Promise.all(files)
-        return plugins.map(JSON.parse).sort((a, b) => new Date(b.date) - new Date(a.date))
+        return plugins.map(JSON.parse).sort((a, b) => b.id - a.id)
     });
 
     eleventyConfig.addFilter('JSONstringify', (value) => {
