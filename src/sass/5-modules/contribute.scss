@@ -1,0 +1,96 @@
+/* ----------------------------------------------------------- */
+/* == contribute box */
+/* ----------------------------------------------------------- */
+
+.contribute {
+  text-align: center;
+}
+
+.contribute__box,
+.contribute__box:link,
+.contribute__box:visited {
+  display: inline-flex;
+  align-items: center;
+  padding: 2.5rem 4rem;
+  color: darken($color-primary, 20);
+  text-align: left;
+  text-decoration: none;
+  background-color: lighten($color-primary, 35);
+  border: .1rem solid lighten($color-primary, 17);
+  border-radius: $btn-radius;
+  box-shadow: $btn-shadow;
+}
+
+.contribute__box:active,
+.contribute__box:focus {
+  outline: none;
+  box-shadow: $focus-ring;
+}
+
+.contribute__icon {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 3rem;
+}
+
+.contribute__iconGrid {
+  transform-origin: 0% 0%;
+  transition: transform .2s;
+}
+
+.contribute__box:hover .contribute__iconGrid {
+  transform: scale(0);
+}
+
+.contribute__iconAdd {
+  transform-origin: 100% 100%;
+  transition: transform .2s;
+}
+
+.contribute__box:hover .contribute__iconAdd {
+  transform: scale(2.25);
+}
+
+.contribute__title {
+  font-weight: bold;
+}
+
+.contribute__subtitle {
+  color: #737373;
+}
+
+.contribute__box:hover .contribute__subtitle {
+  text-decoration: underline;
+}
+
+.contribute__box:hover .contribute__content .emoji {
+  display: inline-block;
+  animation: 'emoji-shake';
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+@keyframes emoji-shake {
+
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
