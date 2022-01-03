@@ -12,7 +12,11 @@ A vanilla JS plugin respository
 
 > Production build includes minified, autoprefixed CSS
 
+## Contribute
 
-### License
+Be sure to read the [Code of Conduct](CODE_OF_CONDUCT.md) and to follow the [contribution guide](CONTRIBUTING.md) before making a Pull-Request :)
+
+
+## License
 
 The project is under [Anti-Fascist MIT License](https://github.com/Laurelai/anti-fascist-mit-license)
