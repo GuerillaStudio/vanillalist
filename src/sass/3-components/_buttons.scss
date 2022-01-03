@@ -1,12 +1,6 @@
-/**
-* Button Module
-* namespace : .btn
-*/
-
-/* ----------------------------------------------------------- */
-/* == configuration */
-/* ----------------------------------------------------------- */
-
+// -----------------------------------------------------------
+// == Button module
+// -----------------------------------------------------------
 
 $btn-primary: $color-primary;
 $btn-secondary: $color-secondary;
@@ -15,11 +9,6 @@ $btn-danger: #c53a3a;
 $btn-hover: 5%;
 $btn-radius: .3rem;
 $btn-shadow: 0 .1rem .2rem #0f0f0f1a;
-
-
-/* ----------------------------------------------------------- */
-/* == module */
-/* ----------------------------------------------------------- */
 
 .btn {
   display: inline-block;
@@ -52,8 +41,8 @@ $btn-shadow: 0 .1rem .2rem #0f0f0f1a;
   box-shadow: $focus-ring;
 }
 
-/* colors
--------------------------------------------------------------- */
+// colors
+// --------------------------------------------------------------
 
 .btn--primary,
 .btn--primary:link,
@@ -104,19 +93,17 @@ $btn-shadow: 0 .1rem .2rem #0f0f0f1a;
 //   background-color: $btn-danger;
 // }
 
-
 // .btn--danger:hover,
 // .btn--danger:active,
 // .btn--danger:focus {
 //   background-color: darken($btn-danger, $btn-hover);
 // }
 
-/* size
--------------------------------------------------------------- */
+// size
+// --------------------------------------------------------------
 
 .btn--big {
   padding: 1.5rem 3rem;
   font-size: 1.6rem;
   box-shadow: 0 .2rem .4rem #0f0f0f1a;
-
 }

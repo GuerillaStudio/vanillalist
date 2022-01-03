@@ -1,6 +1,6 @@
-/* ----------------------------------------------------------- */
-/* == contribute box */
-/* ----------------------------------------------------------- */
+// -----------------------------------------------------------
+// == contribute box
+// -----------------------------------------------------------
 
 .contribute {
   text-align: center;
@@ -66,14 +66,12 @@
 
 .contribute__box:hover .contribute__content .emoji {
   display: inline-block;
-  animation: 'emoji-shake';
+  animation: "emoji-shake";
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-
 @keyframes emoji-shake {
-
   from,
   to {
     transform: translate3d(0, 0, 0);

@@ -1,13 +1,6 @@
-/**
- * Form Module
- * Namespace : .form
- */
-
-
-/* ----------------------------------------------------------- */
-/* == configuration */
-/* ----------------------------------------------------------- */
-
+// -----------------------------------------------------------
+// == Form Module
+// -----------------------------------------------------------
 
 $input-border-radius: .4rem;
 $input-border: .1rem solid lighten($color-dark-text, 27);
@@ -18,22 +11,16 @@ $input-placeholder-color: darken(desaturate($color-primary, 25), 25);
 $input-error: #ff3860;
 $input-required: #ff3860;
 
-
-/* ----------------------------------------------------------- */
-/* == module */
-/* ----------------------------------------------------------- */
-
-/* placeholders
--------------------------------------------------------------- */
+// placeholders
+// --------------------------------------------------------------
 
 input::placeholder {
   color: $input-placeholder-color;
   font-weight: normal;
 }
 
-
-/* block form
--------------------------------------------------------------- */
+// block form
+// --------------------------------------------------------------
 
 label,
 .label {
@@ -43,8 +30,8 @@ label,
   cursor: pointer;
 }
 
-/* inline form
--------------------------------------------------------------- */
+// inline form
+// --------------------------------------------------------------
 
 .f-inline label,
 .f-inline .label {
@@ -65,10 +52,8 @@ label,
   vertical-align: middle;
 }
 
-
-/* basics style
--------------------------------------------------------------- */
-
+// basics style
+// --------------------------------------------------------------
 
 input,
 select,
@@ -123,21 +108,21 @@ input:focus {
   box-shadow: $focus-ring;
 }
 
-input[type='radio'] + label,
-input[type='checkbox'] + label {
+input[type="radio"] + label,
+input[type="checkbox"] + label {
   display: inline-block;
   margin-right: 1rem;
   vertical-align: baseline;
 }
 
-input[type='radio'],
-input[type='checkbox'] {
+input[type="radio"],
+input[type="checkbox"] {
   width: inherit;
   padding: 0;
 }
 
-// /* autogrid
-// -------------------------------------------------------------- */
+// // autogrid
+// // --------------------------------------------------------------
 
 // [class^='f-grid'] {
 //   display: flex;
@@ -160,8 +145,8 @@ input[type='checkbox'] {
 //   max-width: 100%;
 // }
 
-// /* size
-// -------------------------------------------------------------- */
+// // size
+// // --------------------------------------------------------------
 
 // .f-size-1 {
 //   max-width: 10rem;
@@ -187,8 +172,8 @@ input[type='checkbox'] {
 //   max-width: 100%;
 // }
 
-// /* errors
-// -------------------------------------------------------------- */
+// // errors
+// // --------------------------------------------------------------
 
 // .f-required {
 //   color: $input-error;

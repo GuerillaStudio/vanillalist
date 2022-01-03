@@ -1,11 +1,6 @@
-/**
- * Radiobox Module
- * Namespace : .radiobox
- */
-
-/* ----------------------------------------------------------- */
-/* == module */
-/* ----------------------------------------------------------- */
+// -----------------------------------------------------------
+// == Radiobox Module
+// -----------------------------------------------------------
 
 .radiobox {
   display: inline-flex;
@@ -48,14 +43,14 @@
   border-radius: 0 ($input-border-radius - .2rem) ($input-border-radius - .2rem) 0;
 }
 
-/* Checked state */
+// Checked state
 
 .radiobox input:checked + label {
   color: #fff;
   background-color: $color-primary;
 }
 
-/* Focus state */
+// Focus state
 
 .radiobox input:focus + label {
   box-shadow: $focus-ring;

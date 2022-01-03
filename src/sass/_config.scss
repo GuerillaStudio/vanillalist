@@ -8,8 +8,8 @@
 $base-font       : 15; // px value (without unit), will be converted in em
 $line-height     : 1.5;
 
-$fontstack1      : 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$fontstack2      : Georgia, Times, 'Times New Roman', serif;
+$fontstack1      : "Helvetica Neue", helvetica, arial, sans-serif;
+$fontstack2      : georgia, times, "Times New Roman", serif;
 
 // responsive
 // --------------------------------------------------------------
@@ -27,4 +27,4 @@ $default-gutter  : 2rem;
 // Focus ring
 // --------------------------------------------------------------
 
-$focus-ring: 0 0 0 .3rem rgba($color-info, .5);
+$focus-ring: 0 0 0 .3rem transparentize($color-info, .5);

@@ -1,8 +1,8 @@
-/* ----------------------------------------------------------- */
-/* == rwd */
-/* ----------------------------------------------------------- */
+// -----------------------------------------------------------
+// == rwd
+// -----------------------------------------------------------
 
-/* responsive iframe http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/ */
+// responsive iframe http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/
 
 .responsive-iframe {
   position: relative;
@@ -22,68 +22,59 @@
   height: 100%;
 }
 
-
-/* utilities
--------------------------------------------------------------- */
+// utilities
+// --------------------------------------------------------------
 
 .hidden {
   display: none;
 }
 
 @media (min-width: ($large + 1)) {
-
-  [class*='-l+'][class*='hidden-']:not([class*='up']) {
+  [class*="-l+"][class*="hidden-"]:not([class*="up"]) {
     display: none !important;
   }
 }
 
 @media (min-width: ($medium + 1)) and (max-width: $large) {
-
-  [class*='-l'][class*='hidden-']:not([class*='up']) {
+  [class*="-l"][class*="hidden-"]:not([class*="up"]) {
     display: none !important;
   }
 }
 
 @media (min-width: ($small + 1)) and (max-width: $medium) {
-
-  [class*='-m'][class*='hidden-']:not([class*='up']) {
+  [class*="-m"][class*="hidden-"]:not([class*="up"]) {
     display: none !important;
   }
 }
 
 @media (min-width: ($xsmall + 1)) and (max-width: $small) {
-
-  [class*='-s'][class*='hidden-']:not([class*='up']) {
+  [class*="-s"][class*="hidden-"]:not([class*="up"]) {
     display: none !important;
   }
 }
 
 @media (max-width: $xsmall) {
-
-  [class*='-xs'][class*='hidden-']:not([class*='up']) {
+  [class*="-xs"][class*="hidden-"]:not([class*="up"]) {
     display: none !important;
   }
 }
 
 @media (min-width: $small) {
-
   .hidden-s-up {
     display: none !important;
   }
 }
 
 @media (min-width: $xsmall) {
-
   .hidden-xs-up {
     display: none !important;
   }
 }
 
-/* xsmall
--------------------------------------------------------------- */
+// xsmall
+// --------------------------------------------------------------
 
 @media (max-width: $xsmall) {
-
   .mod {
     display: block !important;
     float: none !important;

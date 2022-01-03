@@ -1,6 +1,6 @@
-/* ----------------------------------------------------------- */
-/* == Plugin card module */
-/* ----------------------------------------------------------- */
+// -----------------------------------------------------------
+// == Plugin card module
+// -----------------------------------------------------------
 
 .plugin__visual {
   display: block;
@@ -51,9 +51,9 @@
 .plugin__link::after {
   padding-left: .3em;
   font-size: .9em;
-  font-family: system-ui,-apple-system,sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
   font-style: normal;
-  content: '↗';
+  content: "↗";
 }
 
 .plugin__link:hover,

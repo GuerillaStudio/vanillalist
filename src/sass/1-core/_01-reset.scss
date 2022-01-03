@@ -1,6 +1,6 @@
-/* ----------------------------------------------------------- */
-/* == reset */
-/* ----------------------------------------------------------- */
+// -----------------------------------------------------------
+// == reset
+// -----------------------------------------------------------
 
 html {
   box-sizing: border-box;
@@ -35,9 +35,9 @@ img {
   border-style: none;
 }
 
-/* fix input no style on Safari */
+// fix input no style on Safari
 
-input[type='search'] {
+input[type="search"] {
   appearance: none;
 }
 

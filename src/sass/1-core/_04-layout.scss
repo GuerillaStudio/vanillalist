@@ -1,8 +1,8 @@
-/* ----------------------------------------------------------- */
-/* == layout */
-/* ----------------------------------------------------------- */
+// -----------------------------------------------------------
+// == layout
+// -----------------------------------------------------------
 
-/* BFC to the rescue */
+// BFC to the rescue
 
 .mod {
   overflow: hidden;
@@ -14,14 +14,14 @@
   clear: both;
 }
 
-/* blocks that must contain floats */
+// blocks that must contain floats
 
 .clearfix::after,
 .line::after,
 .mod::after {
   display: table;
   clear: both;
-  content: '';
+  content: "";
 }
 
 .inbl {
