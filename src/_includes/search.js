@@ -2,6 +2,7 @@ class PluginSearch {
     constructor() {
         this.plugins = null
         this.container = document.querySelector('[data-search="results"]')
+        this.noresult = document.querySelector('[data-search="noresult"]')
         this.form = document.querySelector('[data-search="form"]')
         this.input = document.querySelector('[data-search="input"]')
         this.cardGenerator = window.vanillalistCard
@@ -41,9 +42,13 @@ class PluginSearch {
     }
 
     generateResults(plugins) {
-        this.container.innerHTML = plugins.map(plugin => {
-            return this.cardGenerator(plugin)
-        }).join('');
+        if (plugins.length === 0) {
+            this.noresult.classList.remove('hidden')
+        } else {
+            this.container.innerHTML = plugins.map(plugin => {
+                return this.cardGenerator(plugin)
+            }).join('');
+        }
     }
 
     updateResults(plugins) {

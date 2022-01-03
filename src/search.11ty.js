@@ -18,6 +18,7 @@ class Main {
         `;
 
         return `
+            <div class="txtcenter hidden" data-search="noresult">No plugin found with those keywords :(</div>
             <div class="pluginList" data-search="results">
 
             </div>
