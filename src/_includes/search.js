@@ -44,7 +44,9 @@ class PluginSearch {
     generateResults(plugins) {
         if (plugins.length === 0) {
             this.noresult.classList.remove('hidden')
+            this.container.innerHTML = ''
         } else {
+            this.noresult.classList.add('hidden')
             this.container.innerHTML = plugins.map(plugin => {
                 return this.cardGenerator(plugin)
             }).join('');
