@@ -1,6 +1,6 @@
 # Vanilla List
 
-A vanilla JS plugin respository
+A vanilla JS plugin repository
 
 ## Development Scripts
 
