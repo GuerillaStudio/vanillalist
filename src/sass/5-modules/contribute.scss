@@ -66,7 +66,7 @@
 
 .contribute__box:hover .contribute__content .emoji {
   display: inline-block;
-  animation: "emoji-shake";
+  animation-name: emoji-shake;
   animation-duration: 1s;
   animation-fill-mode: both;
 }

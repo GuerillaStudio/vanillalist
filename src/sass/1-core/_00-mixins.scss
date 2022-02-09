@@ -1,14 +1,16 @@
-// --------------------------------------------------------------
-// == mixins */
-// --------------------------------------------------------------
+@use "sass:math";
+
+// -------------------------------------------------------------
+// mixins
+// -------------------------------------------------------------
 
 @mixin flow($font-size, $bf: $base-font, $lh: $line-height) {
   $lh-value: $base-font * $lh;
-  $coeff: ceil($font-size / $lh-value);
-  $new-lh: ($lh-value / $font-size) * $coeff;
-  $margin-bottom: $new-lh / $coeff;
+  $coeff: math.ceil(math.div($font-size, $lh-value));
+  $new-lh: math.div($lh-value, $font-size) * $coeff;
+  $margin-bottom: math.div($new-lh, $coeff);
 
   margin-bottom: $margin-bottom + em;
-  font-size: $font-size / 10 + rem;
+  font-size: math.div($font-size, 10) + rem;
   line-height: $new-lh;
 }
