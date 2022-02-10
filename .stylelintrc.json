@@ -1,7 +1,7 @@
 {
     "extends": [
-        "stylelint-config-standard",
-        "stylelint-config-rational-order"
+        "stylelint-config-standard-scss",
+        "@stanzilla/stylelint-config-rational-order"
     ],
     "plugins": [
         "stylelint-scss"

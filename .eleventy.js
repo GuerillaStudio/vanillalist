@@ -40,7 +40,6 @@ module.exports = function (eleventyConfig) {
     });
 
 
-    // eleventyConfig.addPassthroughCopy("./node_modules/sifter/sifter.min.js")
     // eleventyConfig.addPassthroughCopy("./src/js/")
     eleventyConfig.addPassthroughCopy({ "./src/static/": "/"})
 

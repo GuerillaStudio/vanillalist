@@ -33,7 +33,7 @@ class PluginSearch {
     }
 
     filterResults(plugins) {
-        const instance = new Sifter(plugins)
+        const instance = new sifter(plugins)
         const results = []
         if (this.searchEntry) {
             instance.search(this.searchEntry, this.sifterOptions).items.sort((a, b) => a.score - b.score).map(i => results.push(plugins[i.id]))

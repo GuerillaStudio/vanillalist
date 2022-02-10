@@ -4,7 +4,7 @@ layout: layouts/base.njk
 {{ content | safe }}
 {% block js %}
 {% set jsSifter %}
-  {% include "./../../../node_modules/sifter/sifter.min.js" %}
+  {% include "./../../../node_modules/@orchidjs/sifter/dist/umd/sifter.min.js" %}
 {% endset %}
 {% set jsSearch %}
   {% include "search.js" %}
