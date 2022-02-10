@@ -1,5 +1,5 @@
 const glob = require("glob-promise")
-const fs = require("fs")
+const fs = require("fs/promises")
 const { URL } = require("url")
 const sharpPlugin = require("eleventy-plugin-sharp")
 
@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addCollection('plugins', async () => {
         const files = (await glob('plugins/*.json')).map(filename => {
-            return fs.promises.readFile(filename, { encoding: 'utf-8' })
+            return fs.readFile(filename, { encoding: 'utf-8' })
         })
         const plugins = await Promise.all(files)
         return plugins.map(JSON.parse).sort((a, b) => b.id - a.id)
@@ -29,6 +29,9 @@ module.exports = function (eleventyConfig) {
             console.error(`Trying to convert ${url} to be an absolute url with base ${base} and failed, returning: ${url} (invalid url)`);
             return url;
         }
+    });
+    eleventyConfig.addFilter("base64", async (url) => {
+        return fs.readFile(url, 'base64')
     });
 
     eleventyConfig.addShortcode("titleGenerator", (title, site, pageUrl, pagination) => {

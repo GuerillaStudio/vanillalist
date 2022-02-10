@@ -28,9 +28,10 @@ module.exports = function (plugin) {
                         srcset="${plugin.imagePng.image92} 1x,
                                 ${plugin.imagePng.image184} 2x">
                     <img
-                        src="${plugin.image308}" alt="${plugin.title}"
-                        srcset="${plugin.image616} 2x"
+                        src="${plugin.imagePng.image308}" alt="${plugin.title}"
+                        srcset="${plugin.imagePng.image616} 2x"
                         width="308" height="195"
+                        style="background-image: url(data:image/png;base64,${plugin.bg});"
                         loading="lazy">
                 </picture>
             </a>
