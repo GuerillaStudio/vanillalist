@@ -15,9 +15,18 @@ module.exports = function (plugin) {
             <a class="plugin__visual" href="${visualLink}?ref=vanillalist" target="_blank" rel="noopener">
                 <picture>
                     <source
+                        type="image/webp"
                         media="(max-width: 559px)"
-                        srcset="${plugin.image92} 1x,
-                                ${plugin.image184} 2x">
+                        srcset="${plugin.imageWebp.image92} 1x,
+                                ${plugin.imageWebp.image184} 2x">
+                    <source
+                        type="image/webp"
+                        srcset="${plugin.imageWebp.image308} 1x,
+                                ${plugin.imageWebp.image616} 2x">
+                    <source
+                        media="(max-width: 559px)"
+                        srcset="${plugin.imagePng.image92} 1x,
+                                ${plugin.imagePng.image184} 2x">
                     <img
                         src="${plugin.image308}" alt="${plugin.title}"
                         srcset="${plugin.image616} 2x"
