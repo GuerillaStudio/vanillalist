@@ -16,6 +16,11 @@ A vanilla JS plugin repository
 
 Be sure to read the [Code of Conduct](CODE_OF_CONDUCT.md) and to follow the [contribution guide](CONTRIBUTING.md) before making a Pull-Request :)
 
+### Check broken links easily
+
+```
+npx blc https://vanillalist.top -roi
+```
 
 ## License
 
