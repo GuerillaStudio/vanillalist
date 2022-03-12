@@ -3,9 +3,6 @@
         "stylelint-config-standard-scss",
         "@stanzilla/stylelint-config-rational-order"
     ],
-    "plugins": [
-        "stylelint-scss"
-    ],
     "overrides": [
         {
             "files": [
