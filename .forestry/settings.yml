@@ -14,9 +14,9 @@ sections:
   label: Plugins
   create: documents
   match: "**/*.json"
-  new_doc_ext: ".json"
+  new_doc_ext: json
 upload_dir: uploads
-public_path: "/uploads"
+public_path: ''
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
