@@ -5,11 +5,6 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: uploads
-  label: Thumbnails
-  create: documents
-  match: "**/*"
-- type: directory
   path: plugins
   label: Plugins
   create: documents
