@@ -1,0 +1,9 @@
+{
+  "id": "141",
+  "title": "Duet Date Picker",
+  "image": "/141-duet-date-picker.png",
+  "description": " An open source version of Duet Design System’s accessible date picker",
+  "url_github": "https://github.com/duetds/date-picker",
+  "url_npm": "https://www.npmjs.com/package/@duetds/date-picker",
+  "url_demo": "https://duetds.github.io/date-picker"
+}
