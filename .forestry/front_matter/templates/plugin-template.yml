@@ -25,3 +25,4 @@ fields:
   label: url_demo
 pages:
 - plugins/duet-date-picker.json
+- plugins/granim.js-animated-gradients.json

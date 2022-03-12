@@ -1,0 +1,9 @@
+{
+  "id": "142",
+  "title": "granim.js: Animated gradients",
+  "image": "/142-granim-js.png",
+  "description": "A small library to create and interact with animated gradient.",
+  "url_github": "https://github.com/sarcadass/granim.js",
+  "url_npm": "https://www.npmjs.com/package/granim",
+  "url_demo": "https://sarcadass.github.io/granim.js/"
+}
