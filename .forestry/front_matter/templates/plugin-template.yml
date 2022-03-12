@@ -26,3 +26,4 @@ fields:
 pages:
 - plugins/duet-date-picker.json
 - plugins/granim.js-animated-gradients.json
+- plugins/lax.js-powerful-parallax-engine.json

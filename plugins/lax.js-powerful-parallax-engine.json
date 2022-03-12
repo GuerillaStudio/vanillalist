@@ -1,0 +1,9 @@
+{
+  "id": "143",
+  "title": "lax.js: Powerful parallax engine ",
+  "image": "/143-lax-js-1.png",
+  "description": "A very complete but flexible library to create parallax animations depending of mouse position, time of day and of course scroll.",
+  "url_github": "https://github.com/alexfoxy/lax.js",
+  "url_npm": "https://www.npmjs.com/package/lax.js",
+  "url_demo": "https://alexfox.dev/lax.js/"
+}
