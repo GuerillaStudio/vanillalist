@@ -25,3 +25,5 @@ npx blc https://vanillalist.top -roi
 ## License
 
 The project is under [Anti-Fascist MIT License](https://github.com/Laurelai/anti-fascist-mit-license)
+
+Plugin's visuals belong to their respective owners 
