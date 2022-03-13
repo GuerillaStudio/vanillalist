@@ -1,0 +1,9 @@
+{
+  "id": "145",
+  "title": "Tom Select: A powerful custom multiselect",
+  "image": "/145-tom-select.png",
+  "description": "A versatile, flexible and expandable select control library",
+  "url_github": "https://github.com/orchidjs/tom-select",
+  "url_npm": "https://www.npmjs.com/package/tom-select",
+  "url_demo": "https://tom-select.js.org"
+}
