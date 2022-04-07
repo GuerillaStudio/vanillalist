@@ -32,7 +32,7 @@ module.exports = function (plugin) {
                         srcset="${plugin.imagePng.image616} 2x"
                         width="308" height="195"
                         style="background-image: url(data:image/png;base64,${plugin.bg});"
-                        loading="lazy">
+                        loading="lazy" decoding="async">
                 </picture>
             </a>
             <h2 class="plugin__name">${plugin.title}</h2>
