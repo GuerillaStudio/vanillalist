@@ -1,7 +1,7 @@
 {
   "id": "146",
   "title": "Direction Reveal: Direction aware content reveals",
-  "image": "/direction-reveal.jpg",
+  "image": "/146-direction-reveal.jpg",
   "description": "Detects the direction a user enters or leaves an element allowing you to reveal or hide content based on this direction.",
   "url_github": "https://github.com/NigelOToole/direction-reveal",
   "url_npm": "https://www.npmjs.com/package/direction-reveal",
