@@ -1,0 +1,9 @@
+{
+  "id": "149",
+  "title": "Tiny UI Toggle",
+  "image": "/149-tiny-ui-toggle.jpg",
+  "description": "Toggle the state of a UI element to easily create components e.g. collapse, accordion, tabs, dropdown, dialog/modal.",
+  "url_github": "https://github.com/NigelOToole/tiny-ui-toggle",
+  "url_npm": "https://www.npmjs.com/package/tiny-ui-toggle",
+  "url_demo": "https://nigelotoole.github.io/tiny-ui-toggle"
+}
