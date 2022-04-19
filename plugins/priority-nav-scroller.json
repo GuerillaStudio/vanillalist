@@ -1,7 +1,7 @@
 {
   "id": "148",
   "title": "Priority Nav Scroller: Plugin for the priority+ navigation pattern",
-  "image": "/148-priority-nav-scroller.jpg",
+  "image": "/148-priority-nav-scroller.png",
   "description": "When navigation items don't fit on screen they are hidden and can be scrolled into view or using controls.",
   "url_github": "https://github.com/NigelOToole/priority-nav-scroller",
   "url_npm": "https://www.npmjs.com/package/priority-nav-scroller",
