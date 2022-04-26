@@ -1,0 +1,9 @@
+{
+  "id": "151",
+  "title": "Responsive Video Poster",
+  "image": "/151-responsive-video-poster.jpg",
+  "description": "Take control of video placeholders with a responsive image and full styling control.",
+  "url_github": "https://github.com/NigelOToole/responsive-video-poster",
+  "url_npm": "https://www.npmjs.com/package/responsive-video-poster",
+  "url_demo": "https://nigelotoole.github.io/responsive-video-poster"
+}
