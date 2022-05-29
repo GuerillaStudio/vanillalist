@@ -1,0 +1,13 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Content-Security-Policy = "default-src 'none'; style-src 'self'; form-action 'self'; script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'self';"
+    Feature-Policy = "camera 'none'; display-capture 'none'; document-domain 'none'; geolocation 'none'; microphone 'none'; payment 'none'; usb 'none'"
+[[headers]]
+  for = "/search"
+  [headers.values]
+    Content-Security-Policy = "default-src 'none'; style-src 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; base-uri 'self';"
