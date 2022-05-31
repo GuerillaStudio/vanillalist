@@ -1,10 +1,18 @@
 # Vanilla List
 
-A vanilla JS plugin repository
+**Find the best JS plugins for your next project in this handpicked collection and save time as a developer!**
+
+Available at [https://vanillalist.top](https://vanillalist.top)
+
+![Screenshot of Vanillalist.top's homepage on desktop and mobile screens](screenshot.png)
 
 ## Development Scripts
 
-**`npm start`**
+**`npm ci`**
+
+> Install build dependencies without impacting the package-lock file
+
+**`npm run start`**
 
 > Run 11ty with hot reload at localhost:1312, including reload based on Sass changes
 
@@ -26,4 +34,4 @@ npx blc https://vanillalist.top -roi
 
 The project is under [Anti-Fascist MIT License](https://github.com/Laurelai/anti-fascist-mit-license)
 
-Plugin's visuals belong to their respective owners 
+Plugin's visuals belong to their respective owners
