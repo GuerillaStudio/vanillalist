@@ -10,10 +10,11 @@
             pagination %}
         </title>
         <meta name="description" content="{{ description or site.description }}">
-        <link rel="canonical" href="{% include 'canonical.njk' | url %}"/>
         <meta name="generator" content="Eleventy">
+        <link rel="canonical" href="{% include 'canonical.njk' | url %}"/>
         {% include 'favicons.njk' %}
         <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
+        <link rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | url }}" title="{{ site.name }}" />
         {% block head %}{% endblock %}
     </head>
     <body>

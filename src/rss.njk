@@ -1,0 +1,35 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.name }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ '/feed.xml' | absoluteUrl(site.baseUrl) }}" rel="self"/>
+  <link href="{{ '/' | absoluteUrl(site.baseUrl) }}"/>
+  <id>{{ '/' | absoluteUrl(site.baseUrl) }}</id>
+  {%- for plugin in collections.plugins %}
+  <entry>
+    <title>{{ plugin.title }}</title>
+    <link href="{{ '/search/' | absoluteUrl(site.baseUrl) }}?s={{ plugin.id }}"/>
+    <id>{{ '/search/' | absoluteUrl(site.baseUrl) }}?s={{ plugin.id }}</id>
+    <content type="html">
+        <p>{{ plugin.description }}</p>
+        <ul>
+            {% if plugin.url_demo %}
+            <li><a href="{{ plugin.url_demo }}">Demo link</a></li>
+            {% endif %}
+            {% if plugin.url_github %}
+            <li><a href="{{ plugin.url_github }}">Github link</a></li>
+            {% endif %}
+            {% if plugin.url_nom %}
+            <li><a href="{{ plugin.url_nom }}">npm link</a></li>
+            {% endif %}
+        </ul>
+    </content>
+  </entry>
+  {%- endfor %}
+</feed>

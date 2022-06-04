@@ -8,7 +8,7 @@ class PluginSearch {
         this.cardGenerator = window.vanillalistCard
         this.searchEntry = new URLSearchParams(document.location.search.substring(1)).get('s')
         this.sifterOptions = {
-            fields: ['title', 'description'],
+            fields: ['title', 'description', 'id'],
             filter: true
         }
 

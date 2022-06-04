@@ -14,7 +14,6 @@
         "build": "npm-run-all build:sass build:eleventy"
     },
     "dependencies": {
-        "@11ty/eleventy": "^1.0.0",
         "@orchidjs/sifter": "^0.9.0",
         "autoprefixer": "^10.4.2",
         "cross-env": "^7.0.3",
@@ -29,6 +28,8 @@
         "not dead"
     ],
     "devDependencies": {
+        "@11ty/eleventy": "^1.0.1",
+        "@11ty/eleventy-plugin-rss": "^1.1.2",
         "@stanzilla/stylelint-config-rational-order": "^0.1.3",
         "glob": "^7.2.0",
         "glob-promise": "^4.2.2",

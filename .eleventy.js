@@ -2,8 +2,17 @@ const glob = require("glob-promise")
 const fs = require("fs/promises")
 const { URL } = require("url")
 const sharpPlugin = require("eleventy-plugin-sharp")
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
+
+    eleventyConfig.addGlobalData('generated', () => {
+        let now = new Date();
+        return new Intl.DateTimeFormat(
+          'en-US', { dateStyle: 'full', timeStyle: 'long' }
+        ).format(now);
+      });
+
 
     eleventyConfig.setBrowserSyncConfig({ port: 1312 })
     eleventyConfig.addPlugin(sharpPlugin(
@@ -43,12 +52,13 @@ module.exports = function (eleventyConfig) {
     });
 
 
-    // eleventyConfig.addPassthroughCopy("./src/js/")
     eleventyConfig.addPassthroughCopy({ "./src/static/": "/"})
 
     eleventyConfig.addWatchTarget("./src/sass/")
-    // eleventyConfig.addWatchTarget("./src/js/")
     eleventyConfig.addWatchTarget("./src/static/")
+
+    // RSS
+    eleventyConfig.addPlugin(pluginRss);
 
     return {
         dir: {
