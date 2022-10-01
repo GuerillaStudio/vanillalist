@@ -59,6 +59,14 @@ class PluginSearch {
         history.replaceState(null, null, "?" + queryParams.toString());
         this.searchEntry = new URLSearchParams(document.location.search.substring(1)).get('s')
         this.generateResults(this.filterResults(plugins))
+        // Return searched keywords
+        this.feedbackSearch()
+    }
+
+    feedbackSearch () {
+        if (window.umami) {
+            window.umami.trackEvent('Search', { entry: this.searchEntry });
+        }
     }
 
 }
