@@ -5,7 +5,7 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "no-referrer-when-downgrade"
-    Content-Security-Policy = "default-src 'none'; style-src 'self'; form-action 'self'; script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'self';"
+    Content-Security-Policy = "default-src 'none'; style-src 'self'; form-action 'self'; script-src 'self' a-little-feedback.guerilla.studio; connect-src 'self' a-little-feedback.guerilla.studio; img-src 'self'; base-uri 'self';"
     Feature-Policy = "camera 'none'; display-capture 'none'; document-domain 'none'; geolocation 'none'; microphone 'none'; payment 'none'; usb 'none'"
 [[headers]]
   for = "/search"
