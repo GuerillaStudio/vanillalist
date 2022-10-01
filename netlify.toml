@@ -10,4 +10,4 @@
 [[headers]]
   for = "/search"
   [headers.values]
-    Content-Security-Policy = "default-src 'none'; style-src 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; base-uri 'self';"
+    Content-Security-Policy = "default-src 'none'; style-src 'self'; form-action 'self'; script-src 'self' 'unsafe-inline' a-little-feedback.guerilla.studio; connect-src 'self' a-little-feedback.guerilla.studio; img-src 'self'; base-uri 'self';"
