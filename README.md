@@ -27,7 +27,7 @@ Be sure to read the [Code of Conduct](CODE_OF_CONDUCT.md) and to follow the [con
 ### Check broken links easily
 
 ```
-npx blc https://vanillalist.top -roi
+npx broken-link-checker https://vanillalist.top -roi
 ```
 
 ## License
