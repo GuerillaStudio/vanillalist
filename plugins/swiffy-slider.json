@@ -1,8 +1,8 @@
 {
     "id": "152",
-    "title": "swiffyslider.js: super-light-weight slider and carousel",
+    "title": "swiffyslider.js: Light and full-featured slider",
     "image": "152-swiffyslider.jpg",
-    "description": "Super fast lightweight carousel and slider with touch for optimized websites ",
+    "description": "Powerfull but also lightweight modern carousel-slider plugin. Easily customizable for all use cases and technical stacks",
     "url_github": "https://github.com/dynamicweb/swiffy-slider",
     "url_npm": "https://www.npmjs.com/package/swiffy-slider",
     "url_demo": "https://swiffyslider.com/examples/"
