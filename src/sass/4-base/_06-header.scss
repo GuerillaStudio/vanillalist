@@ -4,7 +4,7 @@
 
 .header {
   margin-bottom: 2rem;
-  padding: 6rem 0;
+  padding: 5rem 0;
   text-align: center;
   border-top: 1rem solid $color-primary;
 }
@@ -23,8 +23,8 @@
   color: $color-primary;
   font-weight: bold;
   font-weight: 600;
-  font-size: 2.8rem;
-  line-height: 1.33em;
+  font-size: 4rem;
+  line-height: 1.2em;
   letter-spacing: .015em;
   border-radius: .3rem;
 }
@@ -36,7 +36,7 @@
 
 .header__slogan {
   color: darken(desaturate($color-primary, 40), 7);
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 // Search

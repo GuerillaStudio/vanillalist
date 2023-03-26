@@ -19,25 +19,25 @@
   margin: 2rem 0 1rem;
   color: #36303e;
   font-weight: normal;
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.3em;
 }
 
 .plugin__about {
   margin-bottom: 1.5rem;
   color: #595959;
-  font-size: 1.4rem;
+  font-size: .9em;
 }
 
 .plugin__link,
 .plugin__link:link,
 .plugin__link:visited {
   display: inline-block;
-  margin-right: .6rem;
-  margin-bottom: .6rem;
-  padding: .6rem 1.5rem;
+  margin-right: .4rem;
+  margin-bottom: .4rem;
+  padding: .8rem 1.6rem;
   color: darken($color-primary, 20);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.16em;
   text-align: center;
   text-transform: capitalize;
