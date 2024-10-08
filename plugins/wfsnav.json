@@ -4,5 +4,6 @@
     "image":"155-wfsnav.js.jpg",
     "description":"Add a quality navigation experience through smooth scroll to blocks, menu item, active state and auto slideover menu closing.",
     "url_github":"https://github.com/WebFullSet/wfsnav",
+    "url_npm":"https://www.npmjs.com/package/wfsnav",
     "url_demo":"https://webfullset.com/wfsnav-demo/"
 }
