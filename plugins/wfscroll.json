@@ -1,8 +1,8 @@
 {
     "id":"154",
-    "title":"wfscroll: Animate on scroll",
+    "title":"WFScroll",
     "image":"154-wfscroll.js.jpg",
-    "description":"WFScroll animates elements as you scroll. Just - 7.5 kb.",
+    "description":"Animates elements as you scroll",
     "url_github":"https://github.com/WebFullSet/wfscroll",
     "url_demo":"https://webfullset.com/wfscroll-demo/"
 }

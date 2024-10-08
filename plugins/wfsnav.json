@@ -1,8 +1,8 @@
 {
     "id":"155",
-    "title":"WFSnav: Smooth transition to blocks",
+    "title":"WFSnav",
     "image":"155-wfsnav.js.jpg",
-    "description":"WFScroll - Smooth transition to blocks - Class on the active menu item - Closing the mobile menu with further moving",
+    "description":"Add a quality navigation experience through smooth scroll to blocks, menu item, active state and auto slideover menu closing.",
     "url_github":"https://github.com/WebFullSet/wfsnav",
     "url_demo":"https://webfullset.com/wfsnav-demo/"
 }
