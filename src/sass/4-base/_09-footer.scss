@@ -10,7 +10,9 @@
 }
 
 .footer a[href*="//"]::after {
-  font-size: .9em;
+  font-size: .8em;
   font-family: system-ui, -apple-system, sans-serif;
+  vertical-align: 10%;
   content: "↗";
+  content: "↗" / "";
 }
