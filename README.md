@@ -5,7 +5,7 @@
 Available at [https://vanillalist.top](https://vanillalist.top)
 
 > [!Note]
-> The project is **temporary** in hiatus mode. Everything is [explained in this post](https://github.com/GuerillaStudio/vanillalist/discussions/49).
+> The project is **temporary** in hiatus mode. Everything is [explained in this blog post](https://guerilla.studio/blog/2024-vanilla-list-state-and-whats-next/).
 
 ---
 
