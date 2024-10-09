@@ -7,8 +7,40 @@ $notif-warning: #ffdd57;
 $notif-error: #ff3860;
 
 .notif {
-  padding: 1em;
-  border-radius: 4px;
+  padding: .6em 1em;
+  border-radius: .3em;
+}
+
+.notif a,
+.notif a:is(:visited,:hover,:active,:focus) {
+  color: currentcolor;
+  cursor: pointer;
+}
+
+.notif svg {
+  width: 1.5em;
+  width: 2cap;
+  height: 1.5em;
+  height: 2cap;
+  vertical-align: -.35em;
+}
+
+.notif a[href*="//"]::after {
+  font-size: .9em;
+  font-family: system-ui, -apple-system, sans-serif;
+  vertical-align: 6%;
+  content: "↗";
+  content: "↗" / "";
+}
+
+.notif--small {
+  font-size: .85em;
+}
+
+.notif--info {
+  color: darken($color-info, 20);
+  background-color: lighten($color-info, 42);
+  border: .1rem solid lighten($color-info, 20);
 }
 
 .notif--success {
