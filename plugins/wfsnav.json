@@ -1,0 +1,9 @@
+{
+    "id":"155",
+    "title":"WFSnav",
+    "image":"155-wfsnav.js.jpg",
+    "description":"Improve navigation UX through smooth scroll to blocks, items active state and slideover menu auto-closing.",
+    "url_github":"https://github.com/WebFullSet/wfsnav",
+    "url_npm":"https://www.npmjs.com/package/wfsnav",
+    "url_demo":"https://webfullset.com/wfsnav-demo/"
+}
