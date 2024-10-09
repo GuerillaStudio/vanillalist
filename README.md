@@ -4,6 +4,11 @@
 
 Available at [https://vanillalist.top](https://vanillalist.top)
 
+> [!Note]
+> The project is **temporary** in hiatus mode. Everything is [explained in this post](https://github.com/GuerillaStudio/vanillalist/discussions/49).
+
+---
+
 ![Screenshot of Vanillalist.top's homepage on desktop and mobile screens](screenshot.png)
 
 ## Development Scripts
