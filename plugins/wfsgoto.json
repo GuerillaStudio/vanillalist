@@ -1,8 +1,8 @@
 {
     "id":"156",
-    "title":"WFSgoto: Smooth transition to blocks",
+    "title":"WFSgoto",
     "image":"156-wfsgoto.js.jpg",
-    "description":"Animate transitions between page blocs.",
+    "description":"Animate smooth scroll between blocs in pages.",
     "url_github":"https://github.com/WebFullSet/wfsgoto",
     "url_npm":"https://www.npmjs.com/package/wfsgoto",
     "url_demo":"https://webfullset.com/wfsgoto-demo/"
