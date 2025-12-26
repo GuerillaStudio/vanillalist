@@ -1,6 +1,6 @@
 {
     "name": "vanillalist",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A vanilla JS plugin repository",
     "license": "Anti-Fascist MIT License",
     "scripts": {
@@ -28,7 +28,7 @@
         "not dead"
     ],
     "devDependencies": {
-        "@11ty/eleventy": "^1.0.1",
+        "@11ty/eleventy": "^3.1.2",
         "@11ty/eleventy-plugin-rss": "^1.1.2",
         "@stanzilla/stylelint-config-rational-order": "^0.1.3",
         "glob": "^7.2.0",
