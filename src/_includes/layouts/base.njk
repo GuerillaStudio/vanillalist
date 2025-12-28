@@ -9,7 +9,7 @@
             page.url,
             pagination %}
         </title>
-        <meta name="description" content="{{ description or site.description }}">
+        <meta name="description" content="{{ description or site.descriptionLong }}">
         <meta name="generator" content="{{ eleventy.generator }}">
         <link rel="canonical" href="{% include 'canonical.njk' | url %}"/>
         {% include 'favicons.njk' %}
@@ -26,15 +26,15 @@
                 <a class="header__homeLink" href="{{ '/' | absoluteUrl(site.baseUrl) }}">
                     <div class="header__picto">{% include 'picto.svg' %}</div>
                     {% if page.fileSlug === '' %}
-                        <h1 class="header__name">The Vanilla JavaScript Repository</h1>
+                        <h1 class="header__name">{{ site.description }}</h1>
                     {% else %}
-                        <div class="header__name">The Vanilla JavaScript Repository</div>
+                        <div class="header__name">{{ site.description }}</div>
                     {% endif %}
                 </a>
                 {% if page.fileSlug !== '' %}
                     <h1 class="visually-hidden">{{ title }}</h1>
                 {% endif %}
-                <p class="header__slogan">Because lighter plugins mean lighter sites</p>
+                <p class="header__slogan">{{ site.tagline }}</p>
                 {# Search #}
                 <form class="header__search" action="/search" method="GET" data-search="form">
                     <label class="visually-hidden" for="search_input">Search plugins</label>

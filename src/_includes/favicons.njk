@@ -8,8 +8,8 @@
 
 <meta property="og:title" content="{% titleGenerator title, site, page.url, pagination %}">
 <meta property="og:site_name" content="{{ site.name }}">
-<meta property="og:description" content="{{ description or site.description }}">
 <meta property="og:url" content="{{ page.url | absoluteUrl(site.baseUrl) }}">
+<meta property="og:description" content="{{ description or site.descriptionLong }}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="{{ '/cover.png' | absoluteUrl(site.baseUrl) }}">
 <meta property="og:image:alt" content="{{ site.description }} - {{ site.tagline }}">
