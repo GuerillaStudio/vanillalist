@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
       });
 
 
-    eleventyConfig.setBrowserSyncConfig({ port: 1312 })
+    eleventyConfig.setServerOptions({ port: 1312 })
     eleventyConfig.addPlugin(sharpPlugin(
         {
             urlPath: '/uploads',
