@@ -5,7 +5,7 @@ class Main {
         return {
             layout: "layouts/search.njk",
             title: "Search",
-            description: "Search JavaScript Vanilla Plugins",
+            description: "Search among this high-quality directory (100+) of curated lightweight vanilla JavaScript plugins components & libraries",
             permalink: "/search/index.html",
             date: 'git Last Modified',
         };

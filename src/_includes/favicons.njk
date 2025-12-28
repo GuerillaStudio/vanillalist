@@ -9,7 +9,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@GlitchFamilyHQ">
 <meta name="twitter:title" content="{% titleGenerator title, site, page.url, pagination %}">
-<meta name="twitter:description" content="{{ description or site.description }}">
+<meta name="twitter:description" content="{{ description or site.description | safe }}">
 <meta name="twitter:image" content="{{ '/cover.png' | absoluteUrl(site.baseUrl) }}">
 
 <meta property="og:title" content="{% titleGenerator title, site, page.url, pagination %}">
