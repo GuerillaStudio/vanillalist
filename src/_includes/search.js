@@ -65,7 +65,7 @@ class PluginSearch {
 
     feedbackSearch () {
         if (window.umami) {
-            window.umami.trackEvent('Search', { entry: this.searchEntry });
+            window.umami.track('Search', { entry: this.searchEntry });
         }
     }
 
