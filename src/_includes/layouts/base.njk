@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            {% titleGenerator title,
+            {%- titleGenerator title,
             site,
             page.url,
-            pagination %}
+            pagination -%}
         </title>
         <meta name="description" content="{{ description or site.descriptionLong }}">
         <meta name="generator" content="{{ eleventy.generator }}">
