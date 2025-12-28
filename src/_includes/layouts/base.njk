@@ -10,7 +10,7 @@
             pagination %}
         </title>
         <meta name="description" content="{{ description or site.description }}">
-        <meta name="generator" content="Eleventy">
+        <meta name="generator" content="{{ eleventy.generator }}">
         <link rel="canonical" href="{% include 'canonical.njk' | url %}"/>
         {% include 'favicons.njk' %}
         <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
