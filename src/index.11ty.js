@@ -9,8 +9,8 @@ class Main {
                 size: "24",
                 alias: "plugins"
             },
-            permalink: data => `/${data.pagination.pageNumber > 0 ? 'page/' + (data.pagination.pageNumber + 1) + '/' : ''}/index.html`
-
+            permalink: data => `/${data.pagination.pageNumber > 0 ? 'page/' + (data.pagination.pageNumber + 1) + '/' : ''}/index.html`,
+            date: 'git Last Modified'
         };
     }
 

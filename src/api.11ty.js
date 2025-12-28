@@ -2,6 +2,7 @@ class Main {
     data() {
         return {
             permalink: "/api/plugins.json",
+            eleventyExcludeFromCollections: true
         };
     }
 

@@ -7,6 +7,7 @@ class Main {
             title: "Search",
             description: "Search JavaScript Vanilla Plugins",
             permalink: "/search/index.html",
+            date: 'git Last Modified',
         };
     }
 

@@ -1,6 +1,7 @@
 const glob = require("glob-promise")
 const fs = require("fs/promises")
 const { URL } = require("url")
+const { DateTime } = require("luxon")
 const sharpPlugin = require("eleventy-plugin-sharp")
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
@@ -42,6 +43,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("base64", async (url) => {
         return fs.readFile(url, 'base64')
     });
+
+    eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+        // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');
+	});
 
     eleventyConfig.addShortcode("titleGenerator", (title, site, pageUrl, pagination) => {
         let endTitle = `${site.name} • ${site.description}`
