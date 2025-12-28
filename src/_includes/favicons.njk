@@ -6,12 +6,6 @@
 <meta name="msapplication-TileColor" content="#8459e1">
 <meta name="theme-color" content="#8459e1">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@GlitchFamilyHQ">
-<meta name="twitter:title" content="{% titleGenerator title, site, page.url, pagination %}">
-<meta name="twitter:description" content="{{ description or site.description }}">
-<meta name="twitter:image" content="{{ '/cover.png' | absoluteUrl(site.baseUrl) }}">
-
 <meta property="og:title" content="{% titleGenerator title, site, page.url, pagination %}">
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:url" content="s{{ page.url | absoluteUrl(site.baseUrl) }}">
