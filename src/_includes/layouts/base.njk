@@ -9,7 +9,7 @@
             page.url,
             pagination -%}
         </title>
-        <meta name="description" content="{{ description or site.descriptionLong }}">
+        <meta name="description" content="{{ description or site.descriptionLong | safe }}">
         <meta name="generator" content="{{ eleventy.generator }}">
         <link rel="canonical" href="{% include 'canonical.njk' | url %}"/>
         {% include 'favicons.njk' %}
