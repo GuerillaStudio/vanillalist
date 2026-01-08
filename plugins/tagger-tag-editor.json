@@ -1,0 +1,9 @@
+{
+    "id": "154",
+    "title": "Tagger: Zero Dependency Tag Editor",
+    "image": "154-tagger.png",
+    "description": "Tagger is a small JavaScript library (with TypeScript support) that adds a way to add tags, similar to the StackOverflow question.",
+    "url_github": "https://github.com/jcubic/tagger",
+    "url_npm": "https://www.npmjs.com/package/@jcubic/tagger",
+    "url_demo": "https://codepen.io/jcubic/pen/YbYpqO"
+}
