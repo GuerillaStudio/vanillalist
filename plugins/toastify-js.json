@@ -1,0 +1,9 @@
+{
+    "id": "155",
+    "title": "Toastify JS - Toast notification library",
+    "image": "155-toastify-js.jpg",
+    "description": "Pure JavaScript library for better notification messages",
+    "url_github": "https://github.com/apvarun/toastify-js",
+    "url_npm": "https://www.npmjs.com/package/toastify-js",
+    "url_demo": "https://apvarun.github.io/toastify-js/"
+}
